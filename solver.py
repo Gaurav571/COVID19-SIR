@@ -216,7 +216,7 @@ def main():
     remove_province('data/time_series_19-covid-Confirmed.csv', 'data/time_series_19-covid-Confirmed-country.csv')
     remove_province('data/time_series_19-covid-Recovered.csv', 'data/time_series_19-covid-Recovered-country.csv')
     remove_province('data/time_series_19-covid-Deaths.csv', 'data/time_series_19-covid-Deaths-country.csv')
-
+    countries=['India']
     for country in countries:
         learner = Learner(country, loss, startdate, predict_range, s_0, i_0, r_0)
         #try:
